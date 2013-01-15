@@ -1,0 +1,8 @@
+Aihe: Muistipeli
+Toteutetaan peli, jossa on tarkoituksena löytää pelilaudalla oleville korteille parit. 
+Käyttäjät: pelaaja
+Pelin toiminnot: 
+- pelin aloittaminen
+- pelaaminen
+- kun kaikki parit on löydetty niin tulostetaan pelaamiseen kulunut aika
+- pelin aloittaminen uudelleen

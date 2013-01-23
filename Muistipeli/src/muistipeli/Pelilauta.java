@@ -10,13 +10,19 @@ public class Pelilauta {
     private ArrayList<Korttipari> kortit;
 
     public Pelilauta() {
-        this.korttienMaara = 30;        
+        this.korttienMaara = 30;
+        this.kaytetytKirjaimet = new ArrayList<Character>();
+    }
+
+    public Pelilauta(int korttienMaara) {
+        this.korttienMaara = korttienMaara;
+        this.kaytetytKirjaimet = new ArrayList<Character>();
     }
 
     public void luoKortit() {
         this.kortit = new ArrayList<Korttipari>();
         int luodutKortit = 0;
-        
+
         while (korttienMaara > luodutKortit) {
             char kirjain = arvoKirjain();
             this.kortit.add(new Korttipari(kirjain));
@@ -30,12 +36,12 @@ public class Pelilauta {
         Random r = new Random();
 
         char kirjain = kirjaimet.charAt(r.nextInt(jononPituus));
-        //while (kaytetytKirjaimet.contains(kirjain)) {
-        //    kirjain = kirjaimet.charAt(r.nextInt(jononPituus));
-        //}
-        
-        //this.kaytetytKirjaimet.add(kirjain);
-        
+        while (kaytetytKirjaimet.contains(kirjain)) {
+            kirjain = kirjaimet.charAt(r.nextInt(jononPituus));
+        }
+
+        this.kaytetytKirjaimet.add(kirjain);
+
         return kirjain;
     }
 
@@ -43,17 +49,17 @@ public class Pelilauta {
 
         return -1;
     }
-    
-    public void tulostaKortit(){
-        for(Korttipari a : kortit) {
+
+    public void tulostaKortit() {
+        for (Korttipari a : kortit) {
             System.out.println(a.kirjain());
-        }    
+        }
     }
-    
+
     public int korttienMaara() {
         return kortit.size();
     }
-    
+
     public ArrayList kortit() {
         return kortit;
     }

@@ -6,9 +6,9 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-public class MuistipeliTest {
+public class PelilautaTest {
     
-    public MuistipeliTest() {
+    public PelilautaTest() {
     }
     
     @BeforeClass
@@ -40,4 +40,5 @@ public class MuistipeliTest {
         pelilauta.luoKortit();
         assertEquals(pelilauta.korttienMaara()*2, 30);
     }
+        
 }

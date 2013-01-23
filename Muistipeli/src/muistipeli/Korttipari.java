@@ -21,4 +21,12 @@ public class Korttipari {
         String kirjain = Character.toString(this.kirjain);
         return kirjain;
     }
+    
+    public Kortti getKortti1(){
+        return kortti1;
+    }
+    
+    public Kortti getKortti2(){
+        return kortti2;
+    }
 }

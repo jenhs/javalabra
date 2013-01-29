@@ -8,8 +8,8 @@ public class Korttipari {
 
     public Korttipari(char kirjain) {
         this.kirjain = kirjain;
-        this.kortti1 = new Kortti(1, 2, kirjain);
-        this.kortti2 = new Kortti(1, 2, kirjain);
+        this.kortti1 = new Kortti(kirjain);
+        this.kortti2 = new Kortti(kirjain);
     }
 
     public boolean loydetty() {

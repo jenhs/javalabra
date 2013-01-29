@@ -5,14 +5,17 @@ public class Kortti {
     private int sijaintiY;
     private char kirjain;
     
-    public Kortti(int sijaintiX, int sijaintiY, char kirjain) {
+    public Kortti(char kirjain) {
         this.kirjain = kirjain;
-        this.sijaintiX = sijaintiX;
-        this.sijaintiY = sijaintiY;
     }
     
     public char kirjain() {
         return kirjain;
+    }
+    
+    public void asetaSijainti(int x, int y) {
+        this.sijaintiX = x;
+        this.sijaintiY = y;
     }
     
     public int sijaintiX() {
@@ -22,4 +25,5 @@ public class Kortti {
     public int sijaintiY() {
         return this.sijaintiY;
     }
+    
 }

@@ -9,3 +9,6 @@
 
 22.1 3h
 	Ohjelmointia, luokkakaavion teko
+
+29.1 3h
+	Ohjelmointia

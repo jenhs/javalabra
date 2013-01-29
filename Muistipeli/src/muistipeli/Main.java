@@ -7,5 +7,13 @@ public class Main {
         pelilauta.luoKortit();   
         
         pelilauta.tulostaKortit();
+        
+        for(int[] rivi : pelilauta.korttienSijainnit()) {
+            System.out.println("");
+            for(int alkio : rivi) {
+                System.out.print(alkio);
+            }
+        }
+       
     }
 }
